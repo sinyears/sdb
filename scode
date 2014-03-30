@@ -1,0 +1,6 @@
+hline=`find . -name "*.h" | xargs grep "" | wc -l`
+cppline=`find . -name "*.cpp" | xargs grep "" | wc -l`
+echo cppline : ${cppline}
+echo hline : ${hline}
+((totalline = ${cppline} + ${hline}))
+echo totalline : ${totalline}
